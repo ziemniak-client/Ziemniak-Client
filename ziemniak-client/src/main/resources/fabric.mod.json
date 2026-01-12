@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "ziemniak-client",
+  "version": "${version}",
+  "name": "Ziemniak Client",
+  "description": "Best meteor addon for DonutSMP.net",
+  "authors": [
+    "alebymsezjadl"
+  ],
+  "contact": {
+    "homepage": "https://github.com/yourusername/ziemniak-client",
+    "sources": "https://github.com/yourusername/ziemniak-client"
+  },
+  "license": "MIT",
+  "icon": "assets/ziemniak-client/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "meteor": [
+      "com.ziemniak.client.ZiemniakClient"
+    ]
+  },
+  "mixins": [
+     "ziemniak-client.mixins.json"
+   ],
+  
+  "depends": {
+    "java": ">=21",
+    "minecraft": "1.21.1",
+    "fabricloader": ">=0.15.11",
+    "meteor-client": ">=0.5.8"
+  }
+}
