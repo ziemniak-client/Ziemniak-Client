@@ -5,14 +5,8 @@ A Meteor Client addon for Minecraft 1.21.1 Fabric that provides advanced chunk d
 ## Features
 
 ### ChunkFinder Module
-Secretly detects valuable chunks and locations without revealing what was found:
-
-- **Dripstone Detection**: Finds long stalactites (7+ blocks) and stalagmites (8+ blocks)
-- **Kelp Farm Detection**: Locates perfect kelp chunks (18/20 tops at Y=62)
-  - **Smart Threshold**: Only notifies after finding 9 kelp chunks (configurable) to reduce false positives
-- **Vine Detection**: Detects long vines extending to Y=16
-- **Pillager Detection**: Alerts when pillagers are nearby
-- **Wandering Trader Detection**: Alerts when wandering traders are found
+Secretly detects valuable chunks and locations without revealing what was 
+found:
 
 ### Notifications
 When something is detected:
@@ -63,37 +57,6 @@ When something is detected:
 4. Enable the "ChunkFinder" module
 5. Configure detection settings as desired
 6. Explore and wait for detections!
-
-## Configuration
-
-### Dripstone Settings
-- **Detect Dripstone**: Enable/disable dripstone detection
-- **Min Stalactite Length**: Minimum length for stalactites (default: 7)
-- **Min Stalagmite Length**: Minimum length for stalagmites (default: 8)
-
-### Kelp Settings
-- **Detect Kelp**: Enable/disable kelp chunk detection
-- **Min Kelp Columns**: Minimum kelp columns required (default: 20)
-- **Min Tops at Y62**: Minimum tops at Y=62 (default: 18)
-- **Kelp Chunk Threshold**: Number of kelp chunks to find before notifying (default: 9)
-
-### Vine Settings
-- **Detect Vines**: Enable/disable vine detection
-- **Min Vine Length**: Minimum vine length (default: 20)
-
-### Entity Settings
-- **Detect Pillagers**: Enable/disable pillager detection
-- **Detect Wandering Traders**: Enable/disable trader detection
-- **Max Distance**: Maximum detection distance (default: 128)
-
-### Render Settings
-- **Marker Color**: Color of the detection marker
-- **Shape Mode**: Rendering mode (Both/Sides/Lines)
-- **Marker Duration**: How long markers stay visible (0 = permanent)
-
-### Threading Settings
-- **Enable Threading**: Use multi-threading for better performance
-- **Thread Pool Size**: Number of threads to use (default: 2)
 
 ## License
 
